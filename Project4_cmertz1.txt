@@ -1,0 +1,7 @@
+This panda3d project allows you to take a gander at some planets, 
+and a space station, all of which are located in an unknown part of the universe. 
+You can also see the x y and z circles, a gathering of drones over a planet, and drones that make
+the seams of a baseball over a different planet. The drones are our friend by the way. You're seeing all of this from the perspective of the Player SpaceShip. 
+This machine can move left, right, up, down, and it can even roll to the left or the right. It can propel
+fowards too of course. It's also able to bump into the 6 planets, the universe itself, and the drones. 
+This is part 4 of the Space Jam project.
