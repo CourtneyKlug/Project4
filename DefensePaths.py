@@ -14,7 +14,16 @@ def Camera(render, parent, name, radius, color, axis):
             placeholder.setPos(radius * math.cos(theta), 0.0, radius * math.sin(theta))
         placeholder.setColor(*color)
         parent.instanceTo(placeholder)
+         
+        collisioncamera = CollisionNode(name + 'collision')
+        collisioncamera.addSolid(CollisionSphere(0, 0, 0, 7))
+        collisionattach = placeholder.attachNewNode(collisioncamera)
+        #collisionattach.show()
+
+        collisioncamera.setFromCollideMask(BitMask32.bit(0))
+        collisioncamera.setIntoCollideMask(BitMask32.allOn())
         x = x + 2 * math.pi / 100
+        
 
 def Cloud(radius = 1):
     x = 2 * random.random() - 1
